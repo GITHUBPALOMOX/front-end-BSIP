@@ -1,0 +1,145 @@
+<html>
+    <head>
+    <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+    <body>
+        <header>
+      <!-- Menú versión móvil -->
+      <ul id="mobile-demo" class="side-nav">
+        <li><a href="file:///C:/Users/palomo/Desktop/bsip/index.html">Home</a></li>
+        <li class="no-padding">
+          <ul class="collapsible collapsible-accordion">
+            <li>
+              <a class="collapsible-header">Consultas<i class="mdi-navigation-arrow-drop-down"></i></a>
+              <div class="collapsible-body">
+                <ul>
+                  <li><a href="lista_empresas.html">Empresas</a></li>
+                  <li><a href="lista_proyectos.html">Proyectos</a></li>
+                  <li><a href="lista_carreras.html">Carreras</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </li>
+        <li class="no-padding">
+          <ul class="collapsible collapsible-accordion">
+            <li>
+              <a class="collapsible-header">Registro<i class="mdi-navigation-arrow-drop-down"></i></a>
+              <div class="collapsible-body">
+                <ul>
+                  <li><a href="reg_empresa.html">Nueva empresa</a></li>
+                  <li><a href="reg_proyecto.html">Nuevo proyecto</a></li>
+                  <li><a href="reg_carrera.html">Nueva Carrera</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <!-- Menú versión escritorio -->
+      <ul id="consultas" class="dropdown-content">
+        <li><a href="lista_empresas.html">Empresas</a></li>
+        <li class="divider"></li>
+        <li><a href="lista_proyectos.html">Proyectos</a></li>
+        <li class="divider"></li>
+        <li><a href="lista_carreras.html">Carreras</a></li>
+        <li class="divider"></li>
+      </ul>
+      <ul id="registro" class="dropdown-content">
+        <li><a href="reg_empresa.html">Nueva empresa</a></li>
+        <li class="divider"></li>
+        <li><a href="reg_proyecto.html">Nuevo proyecto</a></li>
+        <li class="divider"></li>
+        <li><a href="reg_carrera.html">Nueva Carrera</a></li>
+      </ul>
+      <nav class="blue darken-1">
+        <div class="nav-wrapper">
+          <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+          <ul class="left hide-on-med-and-down">
+            <li><a href="index.html">Home<i class="material-icons left">dashboard</i></a></li>
+            <!-- Dropdown Trigger -->
+            <li><a class="dropdown-button" href="#!" data-activates="consultas">Consultas<i class="material-icons left">search</i><i class="material-icons right">arrow_drop_down</i></a></li>
+            <li><a class="dropdown-button" href="#!" data-activates="registro">Registro<i class="material-icons left">mode_edit</i><i class="material-icons right">arrow_drop_down</i></a></li>
+          </ul>
+        </div>
+      </nav>
+      <a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+
+    </header>
+
+        <main>
+            <div class="row">
+                <div class="col s12">
+                    <div class="card-panel blue-grey lighten-5">
+                            <table class="renponsive-table">
+                                <thead>
+                                    <tr>
+                                        <th>NOMBRE </th>
+                                        <th scope="col" >EMPRESA</th>
+                                        <th scope="col" >DESCRIPCI</th>
+                                        <th scope="col" >ESTADO</th>
+                                        <th scope="col" >MATRICULA</th>
+                                        <th scope="col" >Ar</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><a scope="row" class="collection-item"><p>proyecto escolar para la administracion y control de la gestion de los proyectos</p><span class="badge"></span></a><td>
+
+                                        <td><a scope="row" class="collection-item">Sistema de banco de proyecto<span class="badge"></span></a><td>
+
+                                        <td>Instituto Tcnologico de Campeche</td>
+                                        <td><p>proyecto escolar para la administracion y control de la gestion de los proyectos</p>
+                                        </td>
+                                        <td>ASIGNADO</td>
+                                        <td>10470200</td>
+                                        <td>sin archivo</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                    </div>
+                    
+                </div>
+            </div>
+            
+        </main>
+         <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        // Initialize collapse button
+        $(".button-collapse").sideNav();
+        // Initialize collapsible (uncomment the line below if you use the dropdown variation)
+        $('.collapsible').collapsible();
+
+        // Show sideNav
+        //$('.button-collapse').sideNav('show');
+        // Hide sideNav
+        //$('.button-collapse').sideNav('hide');       
+      });
+    </script>
+    <script type="text/javascript">
+     $(document).ready(function(){
+      $('.slider').slider({full_width: true});
+    });
+
+     // Pause slider
+$('.slider').slider('pause');
+// Start slider
+$('.slider').slider('start');
+// Next slide
+$('.slider').slider('next');
+// Previous slide
+$('.slider').slider('prev');
+    </script>   
+    </body>
+</html>
+                

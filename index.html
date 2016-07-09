@@ -13,6 +13,9 @@
 
   <body>
     <header>
+     <div class="card-panel center-align">
+              <img src="img/itc.jpg ">
+            </div>
       <!-- Menú versión móvil -->
       <ul id="mobile-demo" class="side-nav">
         <li><a href="file:///C:/Users/palomo/Desktop/bsip/index.html">Home</a></li>
@@ -77,38 +80,36 @@
     </header>
 
     <main>
+    
       <div class="slider">
     <ul class="slides">
       <li>
         <img src="http://lorempixel.com/580/250/nature/1"> <!-- random image -->
         <div class="caption center-align">
-          <h3>This is our big Tagline!</h3>
-          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+          <h3> SISTEMA DE BANCOS DE PROYECTOS INSTITUCIONALES</h3>
+          <h4 class="light grey-text text-lighten-3"> <p> Los Alumnos podran consultar los proyectos Y Empresas disponibles, ademas las Instituciones pueden Registrar y Agregar Proyectos</p></h4>
         </div>
       </li>
       <li>
         <img src="http://lorempixel.com/580/250/nature/2"> <!-- random image -->
         <div class="caption left-align">
-          <h3>Left Aligned Caption</h3>
-          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+          <h3>En Consulta podras visualizar los Proyectos</h3>
+          <h4 class="light grey-text text-lighten-3">En Registro podras agregar tus Proyecto</h4>
         </div>
       </li>
       <li>
         <img src="http://lorempixel.com/580/250/nature/3"> <!-- random image -->
         <div class="caption right-align">
-          <h3>Right Aligned Caption</h3>
-          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-        </div>
-      </li>
-      <li>
-        <img src="http://lorempixel.com/580/250/nature/4"> <!-- random image -->
-        <div class="caption center-align">
-          <h3>This is our big Tagline!</h3>
-          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+          <h3>En Consulta podras visulizar las Empresas</h3>
+          <h5 class="light grey-text text-lighten-3">En Registro agrega tu Empresa 
+          </h5>
         </div>
       </li>
     </ul>
   </div>
+      <div class="parallax-container">
+      <div class="parallax"><img src="img/parallax3.JPG"></div>
+    </div>
     </main>
     <!--Import jQuery before materialize.js-->
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
@@ -120,6 +121,7 @@
         $(".button-collapse").sideNav();
         // Initialize collapsible (uncomment the line below if you use the dropdown variation)
         $('.collapsible').collapsible();
+        $('.parallax').parallax();
 
         // Show sideNav
         //$('.button-collapse').sideNav('show');
@@ -128,18 +130,32 @@
       });
     </script>
     <script type="text/javascript">
-     $(document).ready(function(){
-      $('.slider').slider({full_width: true});
-    });
 
-     // Pause slider
-$('.slider').slider('pause');
+$(document).ready(function(){
+
+$('.slider').slider({full_width: true});
+   
 // Start slider
 $('.slider').slider('start');
 // Next slide
 $('.slider').slider('next');
 // Previous slide
 $('.slider').slider('prev');
+
+ $('.slider').slider({full_width: true});
+ });
+
+$(document).ready(function(){
+      $('.carousel').carousel();
+
+      $('.carousel').carousel('next');
+$('.carousel').carousel('next', [3]); // Move next n times.
+// Previous slide
+$('.carousel').carousel('prev');
+$('.carousel').carousel('prev', [4]); // Move prev n times.
+    });
+        
+
     </script>
 
   </body>

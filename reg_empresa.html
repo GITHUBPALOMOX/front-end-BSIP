@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="utf-8">
     <!--Import Google Icon Font-->
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
@@ -12,7 +13,7 @@
   </head>
 
   <body>
-       <header>
+    <header>
       <!-- Menú versión móvil -->
       <ul id="mobile-demo" class="side-nav">
         <li><a href="file:///C:/Users/palomo/Desktop/bsip/index.html">Home</a></li>
@@ -73,64 +74,132 @@
         </div>
       </nav>
       <a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
-
     </header>
   
   <main>
-  <h1 class="center-align cyan-text">
-      Registro de Empresas</h1> 
-      <li class="divider"></li> 
-      <br />
-<div class="container">
-<form> 
-<div class="row">
-    <div class="col">
-         <div class="input-field col s12 l6 m6">
-      <input value=" "  type="text" class="validate">
-      <label class="active" for="input_text">Nombre de la Empresa</label>
-        </div>
-        <div class="input-field col s12 l6 m6">
-      <input value=" "  type="text" >
-      <label class="active" for="input_text">Titular de la Empresa</label>
-        </div> 
-        <div class="input-field col s12 l6 m6">
-      <input value=" "  type="text" class="validate">
-      <label class="active" for="input_text">Numero de orden (Nº Acuerdo)</label>
-        </div>    
-         <div class="input-field col s12 l6 m6">
-      <input value=" "  type="text" class="validate">
-      <label class="active" for="input_text">Giro de la Empresa</label>
-        </div>
-        <div class="input-field col s12 l6 m6">
-      <input value=" "  type="text" >
-      <label class="active" for="input_text">Titular del proyecto (Asesor Externo)</label>
-        </div> 
-       <div class="input-field col s6 l6 m6">
-      <input value=" "  type="text" class="validate">
-      <label class="active" for="input_text">Colonia </label>
-        </div> 
-        <div class="input-field col s12 l6 m6">
-          <input id="email" type="email" class="validate">
-          <label for="email" data-error="wrong" data-success="right">Email</label>
-        </div>
-         <div class="input-field col s6 l6 m6">
-          <i class="material-icons prefix">phone</i>
-          <input id="icon_telephone" type="tel" class="validate">
-          <label for="icon_telephone">Telephone</label>
-        </div>
-        <div class="input-field col s12 m12">
-            <input id="input_text" type="text" length="50">
-            <label for="input_text">Direccion de la Empresa (Calle: y Numero:)</label>
+    <h1 class="center-align cyan-text">
+      Registro de Empresas
+    </h1> 
+    <li class="divider"></li> 
+    <br />
+    <div class="container">
+      <div class="row">
+        <form class="col s12">
+          <!-- Datos generales --> 
+          <div class="row">
+            <div class="col s12">
+              <div class="card">
+                <div class="card-content">
+                  <span class="card-title">Datos generales</span>
+                  <div class="row">
+                    <!-- Nombre de la empresa -->
+                    <div class="input-field col s12">
+                      <input value=" "  type="text" class="validate">
+                      <label class="active" for="input_text">Nombre de la Empresa</label>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <!-- No. de acuerdo -->
+                    <div class="input-field col s12 l6 m6">
+                      <input value=" "  type="text" class="validate">
+                      <label class="active" for="input_text">Nº Acuerdo</label>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <!-- Titular de la empresa -->
+                    <div class="input-field col s12 l6">
+                      <input value=" "  type="text" >
+                      <label class="active" for="input_text">Titular de la Empresa</label>
+                    </div>
+                    <!-- Puesto del titular -->
+                    <div class="input-field col s12 l6">
+                      <input value=" "  type="text" >
+                      <label class="active" for="input_text">Puesto del titular</label>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="input-field col s12 l6">
+                      <input value=" "  type="text" class="validate">
+                      <label class="active" for="input_text">Giro de la Empresa</label>
+                    </div>
+                    <div class="input-field col s12 l6">
+                      <input value=" "  type="text" class="validate">
+                      <label class="active" for="input_text">RFC de la Empresa</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-  <div class="conteiner" align="center">
-  <div class="btn waves-effect waves-teal">GUARDAR
-</div>
-</div>
-</div>
-</div>
-</form>
-  </div>
-   </main>
+
+          <!-- Ubicación -->
+          <div class="row">
+            <div class="col s12">
+              <div class="card">
+                <div class="card-content">
+                  <span class="card-title">Ubicación</span>
+                  <div class="row">
+                    <!-- Dirección -->
+                    <div class="input-field col s12">
+                      <input id="input_text" type="text" length="50">
+                      <label for="input_text">Direccion de la Empresa (Calle: y Numero:)</label>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <!-- Colonia -->
+                    <div class="input-field col s6 l6">
+                      <input value=" "  type="text" class="validate">
+                      <label class="active" for="input_text">Colonia </label>
+                    </div>
+                    <!-- Código postal -->
+                    <div class="input-field col s6 l6">
+                      <input value=" "  type="text" class="validate">
+                      <label class="active" for="input_text">Código postal </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contacto -->
+          <div class="row">
+            <div class="col s12">
+              <div class="card">
+                <div class="card-content">
+                  <span class="card-title">Contacto</span>
+                  <div class="row">
+                    <!-- Telefono -->
+                    <div class="input-field col s12 m6 l4">
+                      <i class="material-icons prefix">phone</i>
+                      <input id="icon_telephone" type="tel" class="validate">
+                      <label for="icon_telephone">Telephone</label>
+                    </div>
+                    <!-- Email -->
+                    <div class="input-field col s12 m6 l4">
+                      <i class="material-icons prefix">email</i>
+                      <input id="email" type="email" class="validate">
+                      <label for="email" data-error="wrong" data-success="right">Email</label>
+                    </div>
+                    <!-- Redes sociales -->
+                    <div class="input-field col s12 l4">
+                      <i class="material-icons prefix">thumb_up</i>
+                      <input id="icon_telephone" type="tel" class="validate">
+                      <label for="icon_telephone">Redes sociales</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+            
+          <div class="center-align">
+            <button class="btn waves-effect waves-teal">GUARDAR</button>
+          </div>    
+        </form>
+      </div>
+    </div>
+  </main>
    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
@@ -147,5 +216,5 @@
 
       });
     </script>    
-    </body>
-    </html>
+  </body>
+</html>
